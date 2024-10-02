@@ -1,57 +1,51 @@
-nav {background-color: steelblue;
-    padding: 10px;
-  }
-  
+nav {  
+    background-color: steelblue;  
+    padding: 10px;  
+}  
 
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
+nav a {  
+    color: white;  
+    display: block;  
+    padding: 20px;  
+}  
 
-h1 {
-    color: stealblue;
-}
+h1 {  
+    color: steelblue; /* Fixed spelling mistake */  
+}  
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
+main img {  
+    width: 150px; /* More specific image rule */  
+    height: auto;  
+    border: 1px solid steelblue;  
+    padding: 2px;  
+    box-shadow: 0 0 30px gray;  
+}  
 
-p {
-    padding: 0px;   
-}
+p {  
+    padding: 0; /* Padding with no units is valid */  
+}  
 
+footer {  
+    margin-top: 15px;  
+    border-top: 1px solid #000;  
+    text-align: center;  
+}  
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
+main {  
+    max-width: 840px; /* Added 'px' for dimension */  
+}  
 
-main {
-    max-width: 840;
-}
+aside {  
+    width: 20rem;  
+    margin: 1rem;  
+    border: 1px solid rgba(0, 0, 0, 0.2);  
+    padding: 1rem;  
+    background-color: #eee;  
+    color: #333;  
+    text-align: center;  
+}  
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-main img {
-    width: 150px;
-    height: auto;
+aside img {  
+    width: 200px;  
+    height: auto;  
 }
