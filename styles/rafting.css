@@ -1,0 +1,107 @@
+:root {  
+    --primary-color: #CF7C24; /* Bronze */  
+    --secondary-color: #284D77; /* YInMn Blue */  
+    --accent1-color: #C3B6A0; /* Khaki */  
+    --accent2-color: #B4CDE4; /* Columbia blue */  
+}  
+
+body {  
+    font-family: 'Roboto', sans-serif;  
+    line-height: 1.6;  
+    margin: 0;  
+    padding: 0;  
+    max-width: 1200px; /* Limits the width of the page */  
+    margin: auto; /* Centers the container */  
+}  
+
+header {  
+    background-color: var(--secondary-color);  
+    color: white;  
+    padding: 1rem 2rem; /* Add padding to the left and right */  
+    display: flex; /* Use flexbox for layout */  
+    align-items: center; /* Center items vertically */  
+}  
+
+.logo-box {  
+    flex: 1; /* Allow logo to take available space */  
+    margin-right: 20px; /* Space between logo and nav */  
+}  
+
+nav {  
+    flex: 2; /* Allow navigation to take available space */  
+    text-align: right; /* Align navigation to the right */  
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none; /* Removes underlines from navigation links */  
+    margin: 0 20px; /* Increased margin for spacing */  
+}  
+
+h1 {  
+    color: var(--primary-color); /* Bronze */  
+}  
+
+h2 {  
+    color: var(--accent1-color); /* Khaki */  
+}  
+
+p {  
+    color: var(--accent2-color); /* Columbia Blue */   
+    padding: 0.5rem 0;  
+}  
+
+.hero {  
+    position: relative;  
+    overflow: hidden; /* Ensures that contents are clipped to fit */  
+}  
+
+.hero img {  
+    display: block;  
+    width: 100%;  
+    height: auto; /* Maintains aspect ratio */  
+}  
+
+.hero h1 {  
+    position: absolute;  
+    top: 2%; /* Adjust positioning */  
+    left: 5%; /* Adjust positioning */  
+    color: white; /* Set h1 text color */  
+    font-size: 4em; /* Size of the main heading */  
+}  
+
+.hero article {  
+    position: absolute;  
+    bottom: 10%; /* Position it at the bottom */  
+    left: 5%;  
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */  
+    color: white; /* Text color */  
+    padding: 1rem; /* Add some padding for readability */  
+    border-radius: 8px; /* Rounded corners for the article */  
+}  
+
+article img {  
+    float: right; /* Floats the image to the right of the paragraph */  
+    max-width: 40%; /* Limits image size */  
+    margin-left: 20px; /* Space between text and image */  
+}  
+
+footer {  
+    background-color: var(--secondary-color);  
+    color: white;  
+    text-align: left; /* Align text to the left */  
+    padding: 1rem 2rem; /* Add padding to the left and right */  
+    display: flex; /* Use flexbox for layout */  
+    justify-content: space-between; /* Space between items */  
+    align-items: center; /* Center items vertically */  
+}  
+
+.social-links {  
+    display: flex;  
+    align-items: center; /* Center icons vertically */  
+}  
+
+.social-links a img {  
+    width: 30px; /* Size for social media icons */  
+    margin: 0 10px; /* Spacing between icons */  
+}
