@@ -17,14 +17,25 @@ body {
 header {  
     background-color: var(--secondary-color);  
     color: white;  
-    padding: 1rem;  
-    text-align: center;  
+    padding: 1rem 2rem; /* Add padding to the left and right */  
+    display: flex; /* Use flexbox for layout */  
+    align-items: center; /* Center items vertically */  
+}  
+
+.logo-box {  
+    flex: 1; /* Allow logo to take available space */  
+    margin-right: 20px; /* Space between logo and nav */  
+}  
+
+nav {  
+    flex: 2; /* Allow navigation to take available space */  
+    text-align: right; /* Align navigation to the right */  
 }  
 
 nav a {  
     color: white;  
     text-decoration: none; /* Removes underlines from navigation links */  
-    margin: 0 15px;  
+    margin: 0 20px; /* Increased margin for spacing */  
 }  
 
 h1 {  
@@ -78,11 +89,19 @@ article img {
 footer {  
     background-color: var(--secondary-color);  
     color: white;  
-    text-align: center;  
-    padding: 1rem 0;  
+    text-align: left; /* Align text to the left */  
+    padding: 1rem 2rem; /* Add padding to the left and right */  
+    display: flex; /* Use flexbox for layout */  
+    justify-content: space-between; /* Space between items */  
+    align-items: center; /* Center items vertically */  
 }  
 
-.social.links a img {  
+.social-links {  
+    display: flex;  
+    align-items: center; /* Center icons vertically */  
+}  
+
+.social-links a img {  
     width: 30px; /* Size for social media icons */  
     margin: 0 10px; /* Spacing between icons */  
 }
