@@ -111,3 +111,9 @@ aside {
     grid-column: 1/2;
     grid-row: 1/2
 }
+
+h1 {  
+    border-bottom: 1.69px solid #3b89d1d7; /* Bottom border */  
+    padding-bottom: 10px; /* Space between text and border */  
+    margin-bottom: 20px; /* Space between border and paragraph */  
+}  
