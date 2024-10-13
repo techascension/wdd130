@@ -2,7 +2,7 @@
     --primary-color: #CF7C24; /* Bronze */  
     --secondary-color: #284D77; /* YInMn Blue */  
     --accent1-color: #C3B6A0; /* Khaki */  
-    --accent2-color: #B4CDE4; /* Columbia blue */
+    --accent2-color: #B4CDE4; /* Columbia blue */  
     --accent3-color: rgb(0, 130, 236); /* Desired Title Color set */  
 }  
 
@@ -12,17 +12,17 @@ body {
     margin: 0;  
     padding: 0;  
     max-width: 1200px;  
-    margin: auto;
-    font-size: large;
+    margin: auto;  
+    font-size: large;  
 }  
 
 header {  
     background-color: var(--secondary-color);  
     color: white;  
     padding: 1rem 2rem;  
-    display: grid;  
-    grid-template-columns: 1fr 2fr; /* Adjust columns as needed */  
-    align-items: center;  
+    display: flex;  
+    justify-content: space-between; /* Space between logo and navigation */  
+    align-items: center; /* Center items vertically */  
 }  
 
 .logo-box {  
@@ -55,18 +55,14 @@ h2 {
     color: var(--accent1-color);  
 }  
 
-h3 {
-    color: var(--accent3-color)
-}
+h3 {  
+    color: var(--accent3-color); /* Fixed missing semicolon */  
+}  
 
 p {  
     color: var(--accent2-color);  
     padding: 0.5rem 0;  
 }  
-
-dd {
-    color: black;
-}
 
 .hero {  
     position: relative;  
@@ -106,24 +102,25 @@ article img {
 footer {  
     background-color: var(--secondary-color);  
     color: white;  
-    text-align: left;  
-    padding: 1rem 2rem;  
+    padding: 0;  
+    position: relative;  
     display: flex;  
     justify-content: space-around;  
     align-items: flex-start;  
 }  
 
 .social-links {  
+    position: absolute;  
+    bottom: 10px;  
+    right: 20px;  
     display: flex;  
-    align-items: flex-end;  
+    align-items: center;  
 }  
 
 .social-links a img {  
     width: 30px;  
-    margin: 0 10px; 
-    display: grid;
-    justify-content: flex-end; 
-}
+    margin: 0 10px;   
+}  
 
 section {  
     text-align: center; /* Center align text and figures */  
@@ -138,30 +135,11 @@ section img {
     width: 200px; /* Set fixed width */  
     height: 200px; /* Set fixed height */  
     object-fit: cover; /* Maintain aspect ratio while covering the space */  
-}
-
-footer {  
-    background-color: var(--secondary-color);  
-    color: white;  
-    padding: 0;  
-    position: relative;  
 }  
-
-.social-links {  
-    position: absolute;  
-    bottom: 10px;  
-    right: 20px;  
-    display: flex;  
-    align-items: center;  
-}  
-
-.social-links a img {  
-    width: 30px;  
-    margin: 10px 10px; 
-}
 
 #history {  
     text-align: center; /* Center the heading */  
+    color: black;  
 }  
 
 .history-image {  
@@ -171,10 +149,12 @@ footer {
     margin: 0 0 1rem 1rem; /* Add space around the image */  
     border-radius: 9px; /* Curved borders */  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */  
-    padding: 2px;
+    padding: 2px;  
 }  
 
-
+.history-text {  
+    color: #3a3a3a; /* Change this to your desired color */  
+}  
 
 figure {  
     display: block; /* Keep figures block-level elements */  
@@ -182,11 +162,10 @@ figure {
     margin: 0; /* Remove default figure margin for better alignment */  
 }  
 
-figure img {
-    border-radius: 9px;
-    display: flex;
-    justify-content: space-evenly;
-}
+figure img {  
+    border-radius: 9px;  
+    /* Removed invalid flex properties for img */  
+}  
 
 .navigation a {  
     text-decoration: none; /* Remove underline */  
@@ -195,20 +174,13 @@ figure img {
     padding: 7px 15px; /* Add padding for click area */  
     border: 2px solid #b96f00; /* Mini box border */  
     border-radius: 5px; /* Rounded corners */  
-    margin: 20 10px; /* Spacing between links */  
+    margin: 20px 10px; /* Fixed margin with unit */  
     transition: background-color 0.3s, border-color 0.3s; /* Smooth hover transition */  
 }  
 
 .navigation a:hover {  
     background-color: #0056b3; /* Darker background on hover */  
     border-color: #004085; /* Change border color on hover */  
-}  
-
-header {  
-    display: flex;  
-    justify-content: space-between; /* Space between logo and navigation */  
-    align-items: center; /* Center items vertically */  
-    padding: 1rem; /* Space around header content */  
 }  
 
 /* Indent the logo image */  
@@ -219,4 +191,4 @@ header img {
 /* Indent the navigation elements */  
 .navigation {  
     margin-right: 100px; /* Adjust the value as needed for indentation */  
-}  
+}
