@@ -2,7 +2,8 @@
     --primary-color: #CF7C24; /* Bronze */  
     --secondary-color: #284D77; /* YInMn Blue */  
     --accent1-color: #C3B6A0; /* Khaki */  
-    --accent2-color: #B4CDE4; /* Columbia blue */  
+    --accent2-color: #B4CDE4; /* Columbia blue */
+    --accent3-color: rgb(0, 130, 236); /* Desired Title Color set */  
 }  
 
 body {  
@@ -11,7 +12,8 @@ body {
     margin: 0;  
     padding: 0;  
     max-width: 1200px;  
-    margin: auto;  
+    margin: auto;
+    font-size: large;
 }  
 
 header {  
@@ -53,10 +55,18 @@ h2 {
     color: var(--accent1-color);  
 }  
 
+h3 {
+    color: var(--accent3-color)
+}
+
 p {  
     color: var(--accent2-color);  
     padding: 0.5rem 0;  
 }  
+
+dd {
+    color: black;
+}
 
 .hero {  
     position: relative;  
@@ -164,11 +174,7 @@ footer {
     padding: 2px;
 }  
 
-#history article {  
-    text-align: left; /* Align text to the left */  
-    max-width: 800px; /* Limit the width of the article for better readability */  
-    margin: 0 auto; /* Center the article */  
-}
+
 
 figure {  
     display: block; /* Keep figures block-level elements */  
