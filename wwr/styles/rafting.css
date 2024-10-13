@@ -1,7 +1,7 @@
 :root {  
     --primary-color: #CF7C24; /* Bronze */  
     --secondary-color: #284D77; /* YInMn Blue */  
-    --accent1-color: #C3B6A0; /* Khaki */  
+    --accent1-color: #0274a8; /* Khaki */  
     --accent2-color: #B4CDE4; /* Columbia blue */  
     --accent3-color: rgb(0, 130, 236); /* Desired Title Color set */  
 }  
@@ -55,9 +55,9 @@ h2 {
     color: var(--accent1-color);  
 }  
 
-h3 {  
-    color: var(--accent3-color); /* Fixed missing semicolon */  
-}  
+h3 {
+    color: burlywood;
+}
 
 p {  
     color: var(--accent2-color);  
