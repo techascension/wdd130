@@ -29,7 +29,7 @@ header {
 
 nav {   
     display: flex;   
-    justify-content: flex-end; /* Align navigation to the right */  
+    justify-content: space-around; /* Align navigation to the right */  
 }  
 
 nav ul {  
@@ -147,5 +147,70 @@ footer {
 
 .social-links a img {  
     width: 30px;  
-    margin: 10px 10px;  
+    margin: 10px 10px; 
 }
+
+#history {  
+    text-align: center; /* Center the heading */  
+}  
+
+.history-image {  
+    float: right; /* Allows text to wrap around the image */  
+    width: 100%; /* Set image width to 60% of parent container */  
+    height: auto; /* Maintain aspect ratio */  
+    margin: 0 0 1rem 1rem; /* Add space around the image */  
+    border-radius: 9px; /* Curved borders */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */  
+    padding: 2px;
+}  
+
+#history article {  
+    text-align: left; /* Align text to the left */  
+    max-width: 800px; /* Limit the width of the article for better readability */  
+    margin: 0 auto; /* Center the article */  
+}
+
+figure {  
+    display: block; /* Keep figures block-level elements */  
+    text-align: center; /* Center the caption */  
+    margin: 0; /* Remove default figure margin for better alignment */  
+}  
+
+figure img {
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation a {  
+    text-decoration: none; /* Remove underline */  
+    color: #fff; /* Set text color */  
+    background-color: #e28711e7; /* Background color for buttons */  
+    padding: 7px 15px; /* Add padding for click area */  
+    border: 2px solid #b96f00; /* Mini box border */  
+    border-radius: 5px; /* Rounded corners */  
+    margin: 20 10px; /* Spacing between links */  
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth hover transition */  
+}  
+
+.navigation a:hover {  
+    background-color: #0056b3; /* Darker background on hover */  
+    border-color: #004085; /* Change border color on hover */  
+}  
+
+header {  
+    display: flex;  
+    justify-content: space-between; /* Space between logo and navigation */  
+    align-items: center; /* Center items vertically */  
+    padding: 1rem; /* Space around header content */  
+}  
+
+/* Indent the logo image */  
+header img {  
+    margin-left: 150px; /* Adjust the value as needed for indentation */  
+}  
+
+/* Indent the navigation elements */  
+.navigation {  
+    margin-right: 100px; /* Adjust the value as needed for indentation */  
+}  
