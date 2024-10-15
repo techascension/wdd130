@@ -10,7 +10,6 @@ body {
     font-family: 'Roboto', sans-serif;  
     line-height: 1.6;  
     margin: 0;  
-    padding: 0;  
     max-width: 1200px;  
     margin: auto;  
     font-size: large;  
@@ -21,17 +20,17 @@ header {
     color: white;  
     padding: 1rem 2rem;  
     display: flex;  
-    justify-content: space-between; /* Space between logo and navigation */  
-    align-items: center; /* Center items vertically */  
+    justify-content: space-between;  
+    align-items: center;  
 }  
 
 .logo-box {  
     margin-right: 20px;  
 }  
 
-nav {   
-    display: flex;   
-    justify-content: space-around; /* Align navigation to the right */  
+nav {  
+    display: flex;  
+    justify-content: space-around;  
 }  
 
 nav ul {  
@@ -55,9 +54,9 @@ h2 {
     color: var(--accent1-color);  
 }  
 
-h3 {
-    color: burlywood;
-}
+h3 {  
+    color: burlywood;  
+}  
 
 p {  
     color: var(--accent2-color);  
@@ -102,93 +101,85 @@ article img {
 footer {  
     background-color: var(--secondary-color);  
     color: white;  
-    padding: 0;  
-    position: relative;  
+    padding: 1rem 0; /* Added some padding */  
     display: flex;  
     justify-content: space-around;  
     align-items: flex-start;  
 }  
 
 .social-links {  
-    position: absolute;  
-    bottom: 10px;  
-    right: 20px;  
     display: flex;  
     align-items: center;  
 }  
 
 .social-links a img {  
     width: 30px;  
-    margin: 0 10px;   
+    margin: 0 10px;  
 }  
 
 section {  
-    text-align: center; /* Center align text and figures */  
+    text-align: center;  
 }  
 
 section figure {  
-    display: inline-block; /* Align figures in a row */  
-    margin: 10px; /* Add space around figures */  
+    display: inline-block;  
+    margin: 10px;  
 }  
 
 section img {  
-    width: 200px; /* Set fixed width */  
-    height: 200px; /* Set fixed height */  
-    object-fit: cover; /* Maintain aspect ratio while covering the space */  
+    width: 200px;  
+    height: 200px;  
+    object-fit: cover;  
 }  
 
 #history {  
-    text-align: center; /* Center the heading */  
     color: black;  
 }  
 
 .history-image {  
-    float: right; /* Allows text to wrap around the image */  
-    width: 100%; /* Set image width to 60% of parent container */  
-    height: auto; /* Maintain aspect ratio */  
-    margin: 0 0 1rem 1rem; /* Add space around the image */  
-    border-radius: 9px; /* Curved borders */  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */  
+    float: right;  
+    width: 100%; /* Set to 100% to maintain responsiveness */  
+    height: auto;  
+    margin: 0 0 1rem 1rem;  
+    border-radius: 9px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);  
     padding: 2px;  
 }  
 
 .history-text {  
-    color: #3a3a3a; /* Change this to your desired color */  
+    color: #3a3a3a;  
 }  
 
 figure {  
-    display: block; /* Keep figures block-level elements */  
-    text-align: center; /* Center the caption */  
-    margin: 0; /* Remove default figure margin for better alignment */  
+    display: block;  
+    text-align: center;  
+    margin: 0;  
 }  
 
 figure img {  
     border-radius: 9px;  
-    /* Removed invalid flex properties for img */  
 }  
 
 .navigation a {  
-    text-decoration: none; /* Remove underline */  
-    color: #fff; /* Set text color */  
-    background-color: #e28711e7; /* Background color for buttons */  
-    padding: 7px 15px; /* Add padding for click area */  
-    border: 2px solid #b96f00; /* Mini box border */  
-    border-radius: 5px; /* Rounded corners */  
-    margin: 20px 10px; /* Fixed margin with unit */  
-    transition: background-color 0.3s, border-color 0.3s; /* Smooth hover transition */  
+    text-decoration: none;  
+    color: #fff;  
+    background-color: #e28711e7;  
+    padding: 7px 15px;  
+    border: 2px solid #b96f00;  
+    border-radius: 5px;  
+    margin: 20px 10px;  
+    transition: background-color 0.3s, border-color 0.3s;  
 }  
 
 .navigation a:hover {  
-    background-color: #0056b3; /* Darker background on hover */  
-    border-color: #004085; /* Change border color on hover */  
+    background-color: #0056b3;  
+    border-color: #004085;  
 }  
 
-/* Indent the logo image */  
 header img {  
-    margin-left: 150px; /* Adjust the value as needed for indentation */  
+    margin-left: 150px; /* Adjust as needed */  
 }  
 
-/* Indent the navigation elements */  
 .navigation {  
-    margin-right: 100px; /* Adjust the value as needed for indentation */  
+    margin-right: 100px; /* Adjust as needed */  
 }
