@@ -143,7 +143,7 @@ section img {
 }  
 
 .history-image {  
-    float: center; /* Allows text to wrap around the image */  
+    float: right; /* Allows text to wrap around the image */  
     width: 100%; /* Set image width to 100% of parent container */  
     height: auto; /* Maintain aspect ratio */  
     margin: 0 0 1rem 1rem; /* Add space around the image */  
