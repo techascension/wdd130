@@ -1,0 +1,51 @@
+/* Add this in your styles/quiz.css */  
+form {  
+    display: flex;  
+    flex-direction: column; /* Stack input fields vertically */  
+    max-width: 400px; /* Set a max width for the form */  
+    margin: 0 auto; /* Center the form on the page */  
+    padding: 20px; /* Add some padding around the form */  
+    border: 1px solid #ccc; /* Add a border around the form */  
+    border-radius: 8px; /* Rounded corners for a softer look */  
+    background-color: #f9f9f9; /* Light background color */  
+}  
+
+label {  
+    margin-bottom: 5px; /* Space between label and input */  
+    font-weight: bold; /* Make labels bold */  
+}  
+
+input, textarea, select {  
+    padding: 10px; /* Padding inside input fields */  
+    border: 1px solid #ccc; /* Add a border for input elements */  
+    border-radius: 4px; /* Rounded corners for inputs */  
+    margin-bottom: 15px; /* Space between inputs */  
+    font-size: 16px; /* Increase font size for better readability */  
+    width: 100%; /* Full width of the container */  
+    box-sizing: border-box; /* Include padding, border in width calculation */  
+}  
+
+textarea {  
+    resize: vertical; /* Allow vertical resizing of the textarea */  
+}  
+
+button {  
+    padding: 10px 15px; /* Padding within the button */  
+    border: none; /* Remove default border */  
+    border-radius: 4px; /* Rounded corners on the button */  
+    background-color: #007bff; /* Button background color */  
+    color: white; /* Button text color */  
+    font-size: 16px; /* Consistent font size */  
+    cursor: pointer; /* Pointer cursor for buttons */  
+}  
+
+button:hover {  
+    background-color: #0056b3; /* Darker blue on hover */  
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 700;
+}
