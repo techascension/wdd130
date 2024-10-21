@@ -405,7 +405,9 @@ footer {
 .social-links a {  
     color: white; /* Ensure the social media links are white */  
     text-decoration: none; /* Remove underline from links */
-    text-indent: 20px;  
+    text-indent: 20px;
+    display: grid;
+    text-align: center; 
 }  
 
 .social-links img {  

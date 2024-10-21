@@ -60,7 +60,7 @@ h3 {
 }  
 
 p {  
-    color: var(--accent2-color);  
+    color: black; /* General paragraph color set to black */  
     padding: 0.5rem 0;  
 }  
 
@@ -109,21 +109,21 @@ footer {
     align-items: flex-start;  
 }  
 
+footer p {  
+    color: white; /* Footer-specific paragraph color set to white */  
+}  
+
 .social-links {  
     position: absolute;  
     bottom: 10px;  
-    right: 20px;  
+    right: 50px;  
     display: flex;  
     align-items: center;  
 }  
 
 .social-links a img {  
     width: 30px;  
-    margin-left: 30px;  /* Increased space between icons */  
-}  
-
-footer p {  
-    margin-left: 20px; /* Added indentation for the "View Contact Us Wireframe" link */  
+    margin-left: 15px;
 }  
 
 section {  
@@ -141,33 +141,61 @@ section img {
     object-fit: cover; /* Maintain aspect ratio while covering the space */  
 }  
 
-#history {  
-    display: grid;  
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns for text-image-text */  
-    gap: 20px;  
-    align-items: center; /* Align content at the top */  
-    padding: 2rem 0;  
-    background-color: #f9f9f9;  
-}  
+#history {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Create three columns: text, image, text */
+    gap: 0px; /* Space between the columns */
+    align-items: center; /* Align content at the top */
+    padding: 2rem 0;
+    background-color: #f9f9f9; /* Light background for the section */
+}
 
-.history-text.left, .history-text.right {  
-    padding: 2rem;  
-    align-self: start; /* Top-align the text */  
-    color: #000;  
-}  
+#history h2 {
+    grid-column: 1 / span 3; /* Make the title span across all columns */
+    font-size: 2.5rem; /* Make the title larger */
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+    color: var(--accent3-color); /* Use the accent color for the title */
+    margin-right: 20px;
+}
 
-.history-image {  
-    grid-column: 2;  
-    text-align: center;  
-}  
+.history-text.left {
+    text-align: left; /* Align the left text to the right */
+    padding-right: 1rem; /* Reduced padding to bring text closer to the image */
+    margin-left: 50px;
+    color: black;
+}
 
-.history-image img {  
-    max-width: 100%;  
-    height: auto;  
-    border-radius: 9px;  
-    object-fit: cover; /* Ensure the image covers the space */  
-    width: 100%; /* Make the image responsive */  
-}  
+.history-text.right {
+    text-align: left; /* Align the right text to the left */
+    padding-left: 0rem; /* Reduced padding to bring text closer to the image */
+    color: black;
+    margin-right: 50px;
+}
+
+.history-image {
+    text-align: center; /* Ensure the image is centered in its column */
+}
+
+.history-image img {
+    width: 100%; /* Ensure the image takes up the full width of its column */
+    max-width: 400px; /* Limit the image width */
+    height: auto;
+    border-radius: 10px; /* Add slight rounding to the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+@media screen and (max-width: 768px) {
+    #history {
+        grid-template-columns: 1fr; /* Stack everything in a single column */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .history-image {
+        margin-bottom: 10px; /* Add spacing around the image when stacked */
+    }
+}
 
 figure {  
     display: block; /* Keep figures block-level elements */  
@@ -177,13 +205,12 @@ figure {
 
 figure img {  
     border-radius: 9px;  
-    /* Removed invalid flex properties for img */  
 }  
 
 .navigation a {  
     text-decoration: none; /* Remove underline */  
     color: #fff; /* Set text color */  
-    background-color: #e28711e7; /* Background color for buttons */  
+    background-color: rgba(226, 135, 17, 0.9); /* Changed from hex with transparency to rgba for validation */  
     padding: 7px 15px; /* Add padding for click area */  
     border: 2px solid #b96f00; /* Mini box border */  
     border-radius: 5px; /* Rounded corners */  
@@ -204,4 +231,19 @@ header img {
 /* Indent the navigation elements */  
 .navigation {  
     margin-right: 100px; /* Adjust the value as needed for indentation */  
+}
+
+p {
+    color: black; /* General paragraph color remains black */
+    padding: 0.5rem 0;
+}
+
+/* Hero section styling */
+.hero p {
+    color: var(--accent2-color); /* Make the hero paragraph white */
+}
+
+/* Footer-specific styling */
+footer p {
+    color: white; /* Ensure footer paragraph remains white */
 }
