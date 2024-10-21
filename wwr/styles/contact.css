@@ -366,3 +366,58 @@ header img {
 .navigation {  
     margin-right: 100px; /* Adjust the value as needed for indentation */  
 }
+
+
+/* Main content area */
+main {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+p {
+    color: black; /* Set paragraph text to black */
+}
+
+footer {  
+    background-color: var(--secondary-color);  
+    color: white; /* Ensure all footer text is white */  
+    padding: 20px;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+
+.footer-left {  
+    font-size: 14px;  
+    color: white; /* Ensure text in the footer-left section is white */  
+    text-indent: 20px;
+}  
+
+.social-links {  
+    display: flex;  
+    align-items: center;  
+}  
+
+.social-links a {  
+    color: white; /* Ensure the social media links are white */  
+    text-decoration: none; /* Remove underline from links */
+    text-indent: 20px;  
+}  
+
+.social-links img {  
+    width: 30px; /* Control image size */  
+    margin-left: 30px; /* Space between icons */
+}  
+
+.social-links a:hover {  
+    opacity: 0.7; /* Lighter on hover for visual feedback */  
+}
+
+footer p.wireframe-link {  
+    margin-left: 70px; /* Indented the wireframe link */  
+    font-size: 16px;  
+}

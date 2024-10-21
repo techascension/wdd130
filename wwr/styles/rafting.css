@@ -20,18 +20,18 @@ header {
     background-color: var(--secondary-color);  
     color: white;  
     padding: 1rem 2rem;  
-    display: flex;  
-    justify-content: space-between; /* Space between logo and navigation */  
-    align-items: center; /* Center items vertically */  
+    display: grid;  
+    grid-template-columns: 1fr 2fr; /* Adjust column sizes: 1 for the logo, 2 for the nav */  
+    align-items: center; /* Align items vertically */  
 }  
 
 .logo-box {  
-    margin-right: 20px;  
+    grid-column: 1; /* Place logo in the first column */  
 }  
 
-nav {   
-    display: flex;   
-    justify-content: space-around; /* Align navigation to the right */  
+nav {  
+    grid-column: 2; /* Place nav in the second column */  
+    justify-self: end; /* Align navigation to the right */  
 }  
 
 nav ul {  
@@ -55,9 +55,9 @@ h2 {
     color: var(--accent1-color);  
 }  
 
-h3 {
-    color: burlywood;
-}
+h3 {  
+    color: burlywood;  
+}  
 
 p {  
     color: var(--accent2-color);  
@@ -119,7 +119,11 @@ footer {
 
 .social-links a img {  
     width: 30px;  
-    margin: 0 10px;   
+    margin-left: 30px;  /* Increased space between icons */  
+}  
+
+footer p {  
+    margin-left: 20px; /* Added indentation for the "View Contact Us Wireframe" link */  
 }  
 
 section {  
@@ -138,22 +142,31 @@ section img {
 }  
 
 #history {  
-    text-align: center; /* Center the heading */  
-    color: black;  
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns for text-image-text */  
+    gap: 20px;  
+    align-items: center; /* Align content at the top */  
+    padding: 2rem 0;  
+    background-color: #f9f9f9;  
+}  
+
+.history-text.left, .history-text.right {  
+    padding: 2rem;  
+    align-self: start; /* Top-align the text */  
+    color: #000;  
 }  
 
 .history-image {  
-    float: right; /* Allows text to wrap around the image */  
-    width: 100%; /* Set image width to 100% of parent container */  
-    height: auto; /* Maintain aspect ratio */  
-    margin: 0 0 1rem 1rem; /* Add space around the image */  
-    border-radius: 9px; /* Curved borders */  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */  
-    padding: 2px;  
+    grid-column: 2;  
+    text-align: center;  
 }  
 
-.history-text {  
-    color: #3a3a3a; /* Change this to your desired color */  
+.history-image img {  
+    max-width: 100%;  
+    height: auto;  
+    border-radius: 9px;  
+    object-fit: cover; /* Ensure the image covers the space */  
+    width: 100%; /* Make the image responsive */  
 }  
 
 figure {  
