@@ -59,7 +59,7 @@ nav a {
 
 .navigation a {  
     text-decoration: none; /* Remove underline */  
-    color: #fff; /* Set text color */  
+    color: #050000; /* Set text color */  
     background-color: #e28711e7; /* Background color for buttons */  
     padding: 7px 15px; /* Add padding for click area */  
     border: 2px solid #b96f00; /* Mini box border */  
@@ -69,7 +69,7 @@ nav a {
 }  
 
 .navigation a:hover {  
-    background-color: #0056b3; /* Darker background on hover */  
+    background-color: #cccccc; /* Darker background on hover */  
     border-color: #004085; /* Change border color on hover */  
 }  
 
@@ -86,7 +86,7 @@ header img {
 
 main {  
     padding: 20px;  
-    background: #ffffff;  
+    background: #cecece;  
     border-radius: 8px;  
     margin-top: 20px;  
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
@@ -128,8 +128,8 @@ textarea {
 }  
 
 .submit-btn {  
-    background: #35424a;  
-    color: #ffffff;  
+    background: #000000;  
+    color: #e0e6eb;  
     padding: 10px 15px;  
     border: none;  
     border-radius: 5px;  
@@ -138,7 +138,7 @@ textarea {
 }  
 
 .submit-btn:hover {  
-    background: #45a049;  
+    background: #0467a8;  
 }  
 
 /* footer {  
@@ -177,7 +177,7 @@ footer a {
     --secondary-color: #284D77; /* YInMn Blue */  
     --accent1-color: #0274a8; /* Khaki */  
     --accent2-color: #B4CDE4; /* Columbia blue */  
-    --accent3-color: rgb(0, 130, 236); /* Desired Title Color set */  
+    --accent3-color: rgb(0, 51, 92); /* Desired Title Color set */  
 }  
 
 body {  
@@ -192,7 +192,7 @@ body {
 
 header {  
     background-color: var(--secondary-color);  
-    color: white;  
+    color: #ffffff;  
     padding: 1rem 2rem;  
     display: flex;  
     justify-content: space-between; /* Space between logo and navigation */  
@@ -216,7 +216,7 @@ nav ul {
 }  
 
 nav a {  
-    color: white;  
+    color: #ffffff;  
     text-decoration: none;  
     margin: 0 20px;  
 }  
@@ -230,7 +230,7 @@ h2 {
 }  
 
 h3 {
-    color: burlywood;
+    color: #deb887;
 }
 
 p {  
@@ -253,7 +253,7 @@ p {
     position: absolute;  
     top: 2%;  
     left: 5%;  
-    color: white;  
+    color: #ffffff;  
     font-size: 4em;  
 }  
 
@@ -261,8 +261,8 @@ p {
     position: absolute;  
     bottom: 10%;  
     left: 5%;  
-    background-color: rgba(0, 0, 0, 0.7);  
-    color: white;  
+    background-color: #000000b3;  
+    color: #ffffff;  
     padding: 1rem;  
     border-radius: 8px;  
 }  
@@ -275,7 +275,7 @@ article img {
 
 footer {  
     background-color: var(--secondary-color);  
-    color: white;  
+    color: #ffffff;  
     padding: 0;  
     position: relative;  
     display: flex;  
@@ -327,7 +327,7 @@ section img {
 }  
 
 .history-text {  
-    color: #3a3a3a; /* Change this to your desired color */  
+    color: #0a0a0a; /* Change this to your desired color */  
 }  
 
 figure {  
@@ -343,18 +343,18 @@ figure img {
 
 .navigation a {  
     text-decoration: none; /* Remove underline */  
-    color: #fff; /* Set text color */  
-    background-color: #e28711e7; /* Background color for buttons */  
+    color: #000000; /* Set text color */  
+    background-color: #ffffffe7; /* Background color for buttons */  
     padding: 7px 15px; /* Add padding for click area */  
-    border: 2px solid #b96f00; /* Mini box border */  
+    border: 2px solid #301d00; /* Mini box border */  
     border-radius: 5px; /* Rounded corners */  
     margin: 20px 10px; /* Fixed margin with unit */  
     transition: background-color 0.3s, border-color 0.3s; /* Smooth hover transition */  
 }  
 
 .navigation a:hover {  
-    background-color: #0056b3; /* Darker background on hover */  
-    border-color: #004085; /* Change border color on hover */  
+    background-color: #c47011; /* Darker background on hover */  
+    border-color: #df9205; /* Change border color on hover */  
 }  
 
 /* Indent the logo image */  
@@ -374,12 +374,12 @@ main {
     background: #ffffff;
     border-radius: 8px;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(2, 0, 0, 0.1);
 }
 
 
 p {
-    color: black; /* Set paragraph text to black */
+    color: #000000; /* Set paragraph text to black */
 }
 
 footer {  
