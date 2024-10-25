@@ -353,8 +353,8 @@ figure img {
 }  
 
 .navigation a:hover {  
-    background-color: #c47011; /* Darker background on hover */  
-    border-color: #df9205; /* Change border color on hover */  
+    background-color: #449eff; /* Darker background on hover */  
+    border-color: #004085; /* Change border color on hover */  
 }  
 
 /* Indent the logo image */  
