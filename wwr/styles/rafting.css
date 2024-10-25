@@ -148,7 +148,7 @@ section img {
     gap: 0px; /* Space between the columns */
     align-items: center; /* Align content at the top */
     padding: 2rem 0;
-    background-color: #f9f9f9; /* Light background for the section */
+    /* background-color: #ffb1b1; Light background for the section */
 }
 
 #history h2 {
@@ -156,7 +156,7 @@ section img {
     font-size: 2.5rem; /* Make the title larger */
     margin-bottom: 20px;
     text-align: center; /* Center the title */
-    color: var(--accent3-color); /* Use the accent color for the title */
+    color: var(--accent1-color); /* Use the accent color for the title */
     margin-right: 20px;
 }
 
@@ -170,7 +170,7 @@ section img {
 .history-text.right {
     text-align: left; /* Align the right text to the left */
     padding-left: 0rem; /* Reduced padding to bring text closer to the image */
-    color: black;
+    color: #000000;
     margin-right: 50px;
 }
 
@@ -209,10 +209,10 @@ figure img {
 
 .navigation a {  
     text-decoration: none; /* Remove underline */  
-    color: #fff; /* Set text color */  
-    background-color: rgba(226, 135, 17, 0.9); /* Changed from hex with transparency to rgba for validation */  
+    color: #000000; /* Set text color */  
+    background-color: #ffffffe7; /* Changed from hex with transparency to rgba for validation */  
     padding: 7px 15px; /* Add padding for click area */  
-    border: 2px solid #b96f00; /* Mini box border */  
+    border: 2px solid #301d00; /* Mini box border */  
     border-radius: 5px; /* Rounded corners */  
     margin: 20px 10px; /* Fixed margin with unit */  
     transition: background-color 0.3s, border-color 0.3s; /* Smooth hover transition */  
