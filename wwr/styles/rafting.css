@@ -285,7 +285,7 @@ textarea {
     background-color: linear-gradient(135deg, #FF7A00, #fc9221); /* Semi-transparent white */  
     border-radius: 10px;  
     padding: 20px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 99);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);  
     text-align: center;  
 }  
 
