@@ -269,7 +269,7 @@ textarea {
 
 /* Hero image section */  
 .hero-image img {  
-    width: 100%;  
+    width: auto;  
     height: 100%;
     gap: 20px;  
 }  
