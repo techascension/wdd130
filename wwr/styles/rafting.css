@@ -294,7 +294,8 @@ textarea {
     border-radius: 10px;  
 }  
 
-.trip h1 {  
+.trip h1 { 
+    position: absolute;
     color: #000000; /* Heading color */  
     font-size: 24px;  
     margin: 10px 0;  
