@@ -289,13 +289,13 @@ textarea {
 }  
 
 .trip img {  
-    width: auto;  
+    width: 100%;  
     height: auto;  
-    border-radius: 10px;  
+    border-radius: 10px;
+    object-fit: cover;
 }  
 
 .trip h1 { 
-    position: absolute;
     color: #000000; /* Heading color */  
     font-size: 24px;  
     margin: 10px 0;  
