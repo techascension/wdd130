@@ -55,7 +55,7 @@ h3 {
     color: burlywood;  
 }  
 
-.hero {
+.hero h3 {
     display: flex;
     justify-self: start;
 }
