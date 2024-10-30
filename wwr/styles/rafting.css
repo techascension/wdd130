@@ -55,6 +55,11 @@ h3 {
     color: burlywood;  
 }  
 
+.hero {
+    display: flex;
+    justify-self: start;
+}
+
 .hero {  
     position: relative;  
     overflow: hidden;  
