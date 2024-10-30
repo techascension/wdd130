@@ -289,7 +289,7 @@ textarea {
 }  
 
 .trip img {  
-    width: 100%;  
+    width: auto;  
     height: auto;  
     border-radius: 10px;
 }  
