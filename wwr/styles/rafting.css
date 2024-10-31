@@ -438,6 +438,37 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Optional: Add some padding */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 15px 30px; /* Space between icons */
+}
+
+.social-links img {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .signup-form h2 {
@@ -513,23 +544,10 @@ main {
 
 footer p {
     color: white;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-}
-
-.social-links {
-    position: absolute;
-    bottom: 10px;
-    right: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.social-links a img {
-    width: 30px;
-    margin-left: 5px; /* Fixed margin */
 }
